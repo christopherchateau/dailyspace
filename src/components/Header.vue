@@ -6,16 +6,19 @@
 
 <script>
 export default {
-  name: 'header',
+  name: "header",
   data() {
     return {
       title: "daily space"
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped>
+.header {
+  border: 4px solid red;
+}
 .title {
   color: black;
 }

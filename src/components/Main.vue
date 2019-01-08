@@ -15,7 +15,8 @@ export default {
 
 <style scoped>
 .main {
-  background: rgb(215, 215, 215);
+  background: black;
+  color: white;
   margin: 20px;
 }
 </style>

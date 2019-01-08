@@ -1,0 +1,22 @@
+<template>
+  <div class="header">
+    <h1 class="title">{{ title }}</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'header',
+  data() {
+    return {
+      title: "daily space"
+    }
+  }
+}
+</script>
+
+<style scoped>
+.title {
+  color: black;
+}
+</style>

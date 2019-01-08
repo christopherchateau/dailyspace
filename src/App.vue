@@ -1,15 +1,14 @@
 <template>
   <div class="app">
-    <Header/>
-    <Main/>
+    <DailySpaceTitle/>
+    <APOD/>
     <button class="footer-btn" v-on:click="handleClick">{{ buttonDisplay }}</button>
   </div>
 </template>
 
 <script>
-import Header from "./components/Header.vue";
-import Main from "./components/Main.vue";
-import Footer from "./components/Footer.vue";
+import DailySpaceTitle from "./components/DailySpaceTitle.vue";
+import APOD from "./components/APOD.vue";
 
 export default {
   name: "app",
@@ -26,9 +25,8 @@ export default {
     }
   },
   components: {
-    Header,
-    Main,
-    Footer
+    DailySpaceTitle,
+    APOD
   }
 };
 </script>
@@ -48,7 +46,6 @@ export default {
   color: white;
   margin: 20px;
 }
-
 </style>
 
 

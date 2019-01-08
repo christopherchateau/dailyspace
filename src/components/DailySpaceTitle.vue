@@ -1,12 +1,12 @@
 <template>
-  <div class="header">
+  <div class="daily-space-title">
     <h1 class="title">{{ title }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: "header",
+  name: "daily-space-title",
   data() {
     return {
       title: "daily space"
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-.header {
+.daily-space-title {
   align-items: center;
   background: black;
   display: grid;

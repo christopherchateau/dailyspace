@@ -18,6 +18,7 @@ export default {
 <style scoped>
 .header {
   border: 4px solid red;
+  margin: 20px;
 }
 .title {
   color: black;

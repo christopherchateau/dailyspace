@@ -1,12 +1,12 @@
 <template>
-  <div class="main">
-    <h3>Main</h3>
+  <div class="footer">
+    <h3>fooasfter</h3>
   </div>
 </template>
 
 <script>
 export default {
-  name: "main",
+  name: "footer",
   data() {
     return {};
   }
@@ -14,8 +14,8 @@ export default {
 </script>
 
 <style scoped>
-.main {
-  border: 4px solid blue;
+.footer {
+  border: 4px solid green;
   margin: 20px;
 }
 </style>

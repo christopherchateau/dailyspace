@@ -1,22 +1,27 @@
 <template>
   <div class="app">
     <Header/>
+    <Main/>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from "./components/Header.vue";
+import Main from "./components/Main.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    Header
+    Header,
+    Main
   }
-}
+};
 </script>
 
 <style>
-h1 {
-  color: red;
+.app {
+  display: grid;
+  grid-auto-rows: 150px 1fr;
+  height: 100vh;
 }
 </style>

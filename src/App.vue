@@ -14,7 +14,7 @@ export default {
   name: "app",
   data() {
     return {
-      buttonDisplay: "today"
+      buttonDisplay: "this month"
     };
   },
   methods: {
@@ -34,9 +34,12 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css?family=Rubik");
 
+* {
+  font-family: "Rubik", sans-serif;
+}
+
 .app {
   display: grid;
-  font-family: "Rubik", sans-serif;
   grid-auto-rows: 150px 1fr 150px;
   height: 100vh;
 }
@@ -44,7 +47,16 @@ export default {
 .footer-btn {
   background: black;
   color: white;
+  cursor: pointer;
+  font-size: 44px;
   margin: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.footer-btn:hover {
+  background: rgb(205, 205, 205);
+  color: black;
+  transition: all 0.4s ease-in-out;
 }
 </style>
 

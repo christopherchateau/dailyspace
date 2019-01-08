@@ -17,10 +17,15 @@ export default {
 
 <style scoped>
 .header {
-  border: 4px solid red;
+  align-items: center;
+  background: rgb(215, 215, 215);
+  display: grid;
   margin: 20px;
+  justify-content: center;
 }
 .title {
+  color: white;
   color: black;
+  font-size: 42px;
 }
 </style>

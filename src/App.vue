@@ -9,14 +9,23 @@
 <script>
 import DailySpaceTitle from "./components/DailySpaceTitle.vue";
 import APOD from "./components/APOD.vue";
+import apiKeys from "../apiKeys";
 
 export default {
   name: "app",
+
   data() {
     return {
       buttonDisplay: "this month"
     };
   },
+
+  async mounted() {
+    const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKeys.private}`);
+    const data = await response.json();
+    console.log(data);
+  },
+
   methods: {
     handleClick: function() {
       this.buttonDisplay === "today"
@@ -24,6 +33,7 @@ export default {
         : (this.buttonDisplay = "today");
     }
   },
+
   components: {
     DailySpaceTitle,
     APOD

@@ -2,7 +2,7 @@
   <div class="app">
     <Header/>
     <Main/>
-    <button v-on:click="handleClick">{{ buttonDisplay }}</button>
+    <button class="footer-btn" v-on:click="handleClick">{{ buttonDisplay }}</button>
   </div>
 </template>
 
@@ -42,6 +42,13 @@ export default {
   grid-auto-rows: 150px 1fr 150px;
   height: 100vh;
 }
+
+.footer-btn {
+  background: black;
+  color: white;
+  margin: 20px;
+}
+
 </style>
 
 

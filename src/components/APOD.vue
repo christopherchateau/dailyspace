@@ -59,7 +59,7 @@ section {
 
 h3 {
   font-size: 26px;
-  margin: 10px;
+  margin: 10px 20%;
 }
 
 p {

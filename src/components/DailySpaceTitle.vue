@@ -1,8 +1,6 @@
 <template>
   <div class="daily-space-title">
-    <h1 class="title">daily
-      <img class="ufo-img" src="../images/ufo.png">space
-    </h1>
+    <h1 class="title">daily<img class="ufo-img" src="../images/ufo.png">space</h1>
   </div>
 </template>
 

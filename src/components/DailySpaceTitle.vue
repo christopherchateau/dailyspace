@@ -1,17 +1,14 @@
 <template>
   <div class="daily-space-title">
-    <h1 class="title">{{ title }}</h1>
+    <h1 class="title">daily
+      <img class="ufo-img" src="../images/ufo.png">space
+    </h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: "daily-space-title",
-  data() {
-    return {
-      title: "daily space"
-    };
-  }
+  name: "daily-space-title"
 };
 </script>
 
@@ -21,9 +18,19 @@ export default {
   margin: 20px;
   text-align: center;
 }
+
 .title {
+  bottom: 18px;
   color: white;
+  font-family: "Gloria Hallelujah", cursive;
   font-size: 64px;
-  padding-top: 12px;
+  position: relative;
+}
+
+.ufo-img {
+  height: 80px;
+  margin: 0 30px;
+  position: relative;
+  top: 20px;
 }
 </style>

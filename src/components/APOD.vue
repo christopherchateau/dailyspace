@@ -49,7 +49,7 @@ export default {
 
 section {
   align-items: center;
-  border: 4px solid grey;
+  border-bottom: 6px solid grey;
   display: flex;
   flex-direction: column;
   justify-content: center;

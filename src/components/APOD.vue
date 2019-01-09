@@ -1,7 +1,11 @@
 <template>
   <div class="apod">
-    <h3>apod</h3>
-    
+    <section v-for="picture in apodData">
+      <h3>{{ picture.title }}</h3>
+      <p>{{ picture.date }}</p>
+      <p>{{ picture.explanation }}</p>
+      <img class="image" :src="picture.url">
+    </section>
   </div>
 </template>
 
@@ -34,5 +38,22 @@ export default {
   background: black;
   color: white;
   margin: 20px;
+  overflow: auto;
+}
+
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+.image {
+  max-width: 90vw;
 }
 </style>

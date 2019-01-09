@@ -39,6 +39,7 @@ export default {
 
 * {
   font-family: "Rubik", sans-serif;
+  margin: 0;
 }
 
 .app {

@@ -4,7 +4,7 @@
       <h3>{{ picture.title }}</h3>
       <p>{{ picture.date }}</p>
       <p>{{ picture.explanation }}</p>
-      <img class="image" :src="picture.url">
+      <img :src="picture.url">
     </section>
   </div>
 </template>
@@ -43,17 +43,25 @@ export default {
 
 section {
   align-items: center;
+  border: 4px solid grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 20px;
   padding: 20px;
 }
 
 h3 {
   font-size: 26px;
+  margin: 10px;
 }
 
-.image {
-  max-width: 90vw;
+p {
+  margin: 10px;
+}
+
+img {
+  margin-top: 20px;
+  max-width: 80vw;
 }
 </style>

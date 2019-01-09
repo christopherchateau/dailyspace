@@ -39,6 +39,7 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
 * {
   font-family: "Rubik", sans-serif;
@@ -65,8 +66,9 @@ export default {
   border: 4px solid white;
   color: white;
   cursor: pointer;
+  font-family: "Gloria Hallelujah", cursive;
   font-size: 38px;
-  padding: 10px 30px;
+  padding: 0 30px;
   transition: all 0.4s ease-in-out;
 }
 

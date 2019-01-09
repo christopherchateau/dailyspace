@@ -17,14 +17,13 @@ export default {
 
 <style scoped>
 .daily-space-title {
-  align-items: center;
   background: black;
-  display: grid;
   margin: 20px;
-  justify-content: center;
+  text-align: center;
 }
 .title {
   color: white;
-  font-size: 44px;
+  font-size: 64px;
+  padding-top: 12px;
 }
 </style>

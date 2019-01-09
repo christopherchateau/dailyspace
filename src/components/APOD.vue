@@ -1,5 +1,5 @@
 <template>
-  <div v-if=" this.buttonDisplay === 'today'" class="apod">
+  <div v-if="this.buttonDisplay === 'today'" class="apod">
     <section>
       <h3>{{ this.apodData[0].title }}</h3>
       <p>{{ this.apodData[0].date }}</p>

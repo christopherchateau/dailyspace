@@ -14,12 +14,9 @@ import APOD from "./components/APOD.vue";
 
 export default {
   name: "app",
-  props: {
-    appButtonDisplay: "asd"
-  },
   data() {
     return {
-      buttonDisplay: "this month"
+      buttonDisplay: "today"
     };
   },
   methods: {

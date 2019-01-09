@@ -58,7 +58,7 @@ section {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 36px;
   margin: 10px 20%;
 }
 
@@ -68,7 +68,7 @@ p {
 }
 
 img {
-  margin-top: 20px;
+  margin: 20px 0;
   max-height: 60vh;
   max-width: 80vw;
 }

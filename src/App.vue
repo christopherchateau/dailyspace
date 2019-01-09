@@ -67,7 +67,7 @@ export default {
   color: white;
   cursor: pointer;
   font-family: "Gloria Hallelujah", cursive;
-  font-size: 38px;
+  font-size: 32px;
   padding: 0 30px;
   transition: all 0.4s ease-in-out;
 }

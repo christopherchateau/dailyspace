@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <DailySpaceTitle/>
-    <APOD/>
+    <APOD v-bind:buttonDisplay='buttonDisplay'/>
     <button class="footer-btn" v-on:click="handleClick">{{ buttonDisplay }}</button>
   </div>
 </template>
@@ -12,19 +12,20 @@ import APOD from "./components/APOD.vue";
 
 export default {
   name: "app",
-
+  props: {
+    appButtonDisplay: 'asd'
+  },
   data() {
     return {
       buttonDisplay: "this month"
     };
   },
-
   methods: {
     handleClick: function() {
       this.buttonDisplay === "today"
         ? (this.buttonDisplay = "this month")
         : (this.buttonDisplay = "today");
-    },
+    }
   },
 
   components: {

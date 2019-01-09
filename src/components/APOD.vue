@@ -1,5 +1,13 @@
 <template>
-  <div class="apod">
+  <div v-if=" this.buttonDisplay === 'today'" class="apod">
+    <section>
+      <h3>{{ this.apodData[0].title }}</h3>
+      <p>{{ this.apodData[0].date }}</p>
+      <p>{{ this.apodData[0].explanation }}</p>
+      <img :src="this.apodData[0].url">
+    </section>
+  </div>
+  <div v-else class="apod">
     <section v-for="picture in apodData">
       <h3>{{ picture.title }}</h3>
       <p>{{ picture.date }}</p>
@@ -15,16 +23,14 @@ import data from "../helper/apodData";
 
 export default {
   name: "apod",
-
+  props: ["buttonDisplay"],
   async mounted() {
     // const response = await fetch(
     //   `https://api.nasa.gov/planetary/apod?api_key=${apiKeys.private}`
     // );
     // const data = await response.json();
-
     this.apodData = data;
   },
-
   data() {
     return {
       apodData: []
@@ -37,7 +43,7 @@ export default {
 .apod {
   background: black;
   color: white;
-  margin: 20px;
+  margin: 0 20px;
   overflow: auto;
 }
 

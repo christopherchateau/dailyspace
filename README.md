@@ -19,10 +19,10 @@ npm run serve
 npm run build
 ```
 
-#### Mobile View
+### Mobile View
 
 <img src="https://github.com/christopherchateau/dailyspace/blob/master/src/images/dailyspace-mobile.png" width="400px" />
 
-#### Desktop View
+### Desktop View
 
-<img src="https://github.com/christopherchateau/dailyspace/blob/master/src/images/dailyspace-desktop.png" width="800px" />
+<img src="https://github.com/christopherchateau/dailyspace/blob/master/src/images/dailyspace-desktop.png" width="900px" />

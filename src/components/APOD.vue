@@ -63,11 +63,13 @@ h3 {
 }
 
 p {
-  margin: 10px;
+  line-height: 1.8;
+  margin: 20px 20%;
 }
 
 img {
   margin-top: 20px;
+  max-height: 60vh;
   max-width: 80vw;
 }
 </style>

@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "npm run build": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
     "vue": "^2.5.21"
@@ -14,6 +14,8 @@
     "@vue/cli-plugin-babel": "^3.2.0",
     "@vue/cli-service": "^3.2.0",
     "push-dir": "^0.4.1",
+    "vue-gh-pages": "^1.19.0",
     "vue-template-compiler": "^2.5.21"
-  }
+  },
+  "homepage": "https://christopherchateau.github.io/dailyspace/"
 }
